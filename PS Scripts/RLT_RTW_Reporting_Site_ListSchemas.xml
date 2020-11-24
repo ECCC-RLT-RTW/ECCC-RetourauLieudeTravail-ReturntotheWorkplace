@@ -1,0 +1,520 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2020/02/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.23.2007.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-1028F93DCFA647AABA04F5B4B34B4185">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-1028F93DCFA647AABA04F5B4B34B4185" Version="1" BaseSiteTemplate="GROUP#0" Scope="RootSite">
+      <pnp:Lists>
+        <pnp:ListInstance Title="AccessRequest_Dashboard" Description="" DocumentTemplate="" TemplateType="120" Url="Lists/AccessRequest_Dashboard" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-3a1d-41d3-a0ee-651d11570120" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/AccessRequest_Dashboard/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/AccessRequest_Dashboard/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/AccessRequest_Dashboard/NewForm.aspx" ImageUrl="/_layouts/15/images/itdatash.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:PropertyBagEntries>
+            <pnp:PropertyBagEntry Key="wte_Source" Value="https://007gc.sharepoint.com/sites/OfficeEntry-Pilot/Lists/AccessRequest1/Allitemsg.aspx" Overwrite="false" />
+          </pnp:PropertyBagEntries>
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{AE23BB1C-6505-4ED9-99FB-8D2F50178F8F}" DefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/AccessRequest_Dashboard/Allitemsg.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" Ascending="FALSE" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="ID" />
+                <FieldRef Name="SeriesID" />
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="EntryDate" />
+                <FieldRef Name="EntryDateID" />
+                <FieldRef Name="FloorID" />
+                <FieldRef Name="EmployeeLogin" />
+                <FieldRef Name="EmployeeEmail" />
+                <FieldRef Name="EmployeeName" />
+                <FieldRef Name="ManagerLogin" />
+                <FieldRef Name="ManagerEmail" />
+                <FieldRef Name="ManagerName" />
+                <FieldRef Name="StartHour" />
+                <FieldRef Name="EndHour" />
+                <FieldRef Name="CheckIn" />
+                <FieldRef Name="CheckOut" />
+                <FieldRef Name="CheckOutTime" />
+                <FieldRef Name="EquipmentEnglishText" />
+                <FieldRef Name="EquipmentFrenchText" />
+                <FieldRef Name="ReasonDetail" />
+                <FieldRef Name="ReasonEnglishText" />
+                <FieldRef Name="ReasonFrenchText" />
+                <FieldRef Name="RecordCount" />
+                <FieldRef Name="Status" />
+                <FieldRef Name="VisitorCount" />
+                <FieldRef Name="VisitorReason" />
+                <FieldRef Name="Created" />
+                <FieldRef Name="Author" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+                <FieldRef Name="BuildingID" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <ViewData />
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="Number" DisplayName="StartHour" Required="FALSE" Percentage="FALSE" ID="{efbf16c2-5f31-4fd6-a3ba-9f5c24542b2a}" StaticName="StartHour" Name="StartHour" SourceID="{{listid:AccessRequest_Dashboard}}" ColName="float1" RowOrdinal="0" />
+            <Field Type="Number" DisplayName="EndHour" Required="FALSE" Percentage="FALSE" ID="{d01ca3ee-d1ab-407e-acd6-a6f7d0774331}" StaticName="EndHour" Name="EndHour" SourceID="{{listid:AccessRequest_Dashboard}}" ColName="float2" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="FloorID" Required="FALSE" ID="{ce7197ae-68ad-4107-8707-5b00ab463e5d}" StaticName="FloorID" Name="FloorID" Indexed="FALSE" SourceID="{{listid:AccessRequest_Dashboard}}" ColName="nvarchar4" RowOrdinal="0" Version="1" />
+            <Field Type="Text" DisplayName="Status" Required="FALSE" ID="{69447401-42e6-4359-a72c-79f61a710f50}" StaticName="Status" Name="Status" Indexed="FALSE" SourceID="{{listid:AccessRequest_Dashboard}}" ColName="nvarchar5" RowOrdinal="0" Version="1" />
+            <Field Type="Number" DisplayName="VisitorCount" Required="FALSE" Percentage="FALSE" ID="{37d31af3-47a1-4486-af77-798aff552f22}" StaticName="VisitorCount" Name="VisitorCount" SourceID="{{listid:AccessRequest_Dashboard}}" ColName="float3" RowOrdinal="0" />
+            <Field Type="DateTime" DisplayName="EntryDate" Required="FALSE" Format="DateOnly" ID="{857ac3dc-4998-4a77-aa04-0dff1b50f4bc}" StaticName="EntryDate" Name="EntryDate" Indexed="TRUE" SourceID="{{listid:AccessRequest_Dashboard}}" ColName="datetime1" RowOrdinal="0" Version="1" />
+            <Field Type="Number" DisplayName="EntryDateID" Required="FALSE" Percentage="FALSE" ID="{c8d415ed-d9a2-4e09-860a-234cae27c31b}" StaticName="EntryDateID" Name="EntryDateID" Indexed="FALSE" SourceID="{{listid:AccessRequest_Dashboard}}" ColName="float4" RowOrdinal="0" Version="1" />
+            <Field Type="Text" DisplayName="EmployeeLogin" Required="FALSE" ID="{8acae06b-2e3f-4668-b3a4-ca8ccaaa3548}" StaticName="EmployeeLogin" Name="EmployeeLogin" Indexed="FALSE" CustomFormatter="" EnforceUniqueValues="FALSE" MaxLength="255" SourceID="{{listid:AccessRequest_Dashboard}}" ColName="nvarchar6" RowOrdinal="0" Version="2" />
+            <Field Type="Text" DisplayName="EmployeeName" Required="FALSE" ID="{d753706c-8d10-497f-8d21-85d0f34a1ed2}" StaticName="EmployeeName" Name="EmployeeName" CustomFormatter="" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" SourceID="{{listid:AccessRequest_Dashboard}}" ColName="nvarchar7" RowOrdinal="0" Version="1" />
+            <Field Type="Text" DisplayName="EmployeeEmail" Required="FALSE" ID="{eceb10a4-87c4-474b-9b4b-200b98d05891}" StaticName="EmployeeEmail" Name="EmployeeEmail" SourceID="{{listid:AccessRequest_Dashboard}}" ColName="nvarchar8" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="ManagerLogin" Required="FALSE" ID="{4ee35001-7313-4551-b59b-ec08250b7265}" StaticName="ManagerLogin" Name="ManagerLogin" Indexed="FALSE" CustomFormatter="" EnforceUniqueValues="FALSE" MaxLength="255" SourceID="{{listid:AccessRequest_Dashboard}}" ColName="nvarchar9" RowOrdinal="0" Version="2" />
+            <Field Type="Text" DisplayName="ManagerName" Required="FALSE" ID="{36addd30-3430-4005-b3b8-10950d07f497}" StaticName="ManagerName" Name="ManagerName" CustomFormatter="" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" SourceID="{{listid:AccessRequest_Dashboard}}" ColName="nvarchar10" RowOrdinal="0" Version="1" />
+            <Field Type="Text" DisplayName="ManagerEmail" Required="FALSE" ID="{90b1e670-81c9-439d-956f-09b1c01b3c87}" StaticName="ManagerEmail" Name="ManagerEmail" SourceID="{{listid:AccessRequest_Dashboard}}" ColName="nvarchar11" RowOrdinal="0" />
+            <Field Type="Note" DisplayName="EquipmentEnglishText" Required="FALSE" RichText="TRUE" ID="{02b0c1ef-0eec-42e8-af22-d7d041f28ffe}" StaticName="EquipmentEnglishText" Name="EquipmentEnglishText" SourceID="{{listid:AccessRequest_Dashboard}}" ColName="ntext2" RowOrdinal="0" />
+            <Field Type="Note" DisplayName="EquipmentFrenchText" Required="FALSE" RichText="TRUE" ID="{fd96997f-7c79-4ad4-a732-371a9ed4d1f1}" StaticName="EquipmentFrenchText" Name="EquipmentFrenchText" SourceID="{{listid:AccessRequest_Dashboard}}" ColName="ntext3" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="ReasonEnglishText" Required="FALSE" ID="{640d24aa-263d-4165-aa6f-925d650623a8}" StaticName="ReasonEnglishText" Name="ReasonEnglishText" SourceID="{{listid:AccessRequest_Dashboard}}" ColName="nvarchar12" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="ReasonFrenchText" Required="FALSE" ID="{9887cf16-c849-421a-be93-717df861ca98}" StaticName="ReasonFrenchText" Name="ReasonFrenchText" SourceID="{{listid:AccessRequest_Dashboard}}" ColName="nvarchar13" RowOrdinal="0" />
+            <Field Type="Note" DisplayName="ReasonDetail" Required="FALSE" RichText="TRUE" ID="{8af9c96d-a53f-4988-a7a2-76fd1e46a868}" StaticName="ReasonDetail" Name="ReasonDetail" SourceID="{{listid:AccessRequest_Dashboard}}" ColName="ntext4" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="SeriesID" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{dbb09c20-4997-4d2d-abfc-7a0be5d24df6}" StaticName="SeriesID" Name="SeriesID" CustomFormatter="" SourceID="{{listid:AccessRequest_Dashboard}}" ColName="nvarchar14" RowOrdinal="0" Version="2" />
+            <Field Type="Number" DisplayName="RequestCount" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{31c02108-5bc1-4d5a-b747-c06ee5152421}" StaticName="RecordCount" Name="RecordCount" CustomFormatter="" Percentage="FALSE" SourceID="{{listid:AccessRequest_Dashboard}}" ColName="float5" RowOrdinal="0" Version="1" />
+            <Field Type="DateTime" DisplayName="CheckIn" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateTime" FriendlyDisplayFormat="Disabled" ID="{5eed3264-1049-4087-8207-fe9f6197881c}" StaticName="CheckIn" Name="CheckIn" SourceID="{{listid:AccessRequest_Dashboard}}" ColName="datetime2" RowOrdinal="0" />
+            <Field Type="DateTime" DisplayName="CheckOut" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateTime" FriendlyDisplayFormat="Disabled" ID="{539865f2-294a-489d-9623-578d953f841b}" StaticName="CheckOut" Name="CheckOut" SourceID="{{listid:AccessRequest_Dashboard}}" ColName="datetime3" RowOrdinal="0" />
+            <Field Type="Note" DisplayName="VisitorReason" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RichText="TRUE" RichTextMode="FullHtml" IsolateStyles="TRUE" Sortable="FALSE" ID="{74b6d7c0-d119-461c-83fc-fd7bc3a34543}" StaticName="VisitorReason" Name="VisitorReason" SourceID="{{listid:AccessRequest_Dashboard}}" ColName="ntext5" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="CheckOutTime" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{0ee4a8bc-2b78-4466-acdf-d016bd5673ba}" StaticName="CheckOutTime" Name="CheckOutTime" SourceID="{{listid:AccessRequest_Dashboard}}" ColName="nvarchar15" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="BuildingID" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{cdbc4375-621a-4ce2-8d4d-1f61076904dc}" SourceID="{{listid:AccessRequest_Dashboard}}" StaticName="BuildingID" Name="BuildingID" ColName="nvarchar16" RowOrdinal="0" />
+          </pnp:Fields>
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false">
+              <pnp:RoleAssignment Principal="{associatedownergroupid}" RoleDefinition="Full Control" />
+              <pnp:RoleAssignment Principal="Dashboard Readers" RoleDefinition="Read" />
+            </pnp:BreakRoleInheritance>
+          </pnp:Security>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="AccessRequest_Trace" Description="" DocumentTemplate="" TemplateType="120" Url="Lists/AccessRequest_Trace" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-3a1d-41d3-a0ee-651d11570120" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/AccessRequest_Trace/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/AccessRequest_Trace/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/AccessRequest_Trace/NewForm.aspx" ImageUrl="/_layouts/15/images/itdatash.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:PropertyBagEntries>
+            <pnp:PropertyBagEntry Key="wte_Source" Value="https://007gc.sharepoint.com/sites/OfficeEntry-Pilot/Lists/AccessRequest1/Allitemsg.aspx" Overwrite="false" />
+          </pnp:PropertyBagEntries>
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{EFCA324E-2B48-44D5-965C-50647824CB3B}" DefaultView="TRUE" Type="GRID" DisplayName="All Items" Url="{site}/Lists/AccessRequest_Trace/Allitemsg.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query />
+              <ViewFields>
+                <FieldRef Name="ID" />
+                <FieldRef Name="SeriesID" />
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="EntryDate" />
+                <FieldRef Name="EntryDateID" />
+                <FieldRef Name="BuildingID" />
+                <FieldRef Name="FloorID" />
+                <FieldRef Name="EmployeeLogin" />
+                <FieldRef Name="EmployeeEmail" />
+                <FieldRef Name="EmployeeName" />
+                <FieldRef Name="ManagerLogin" />
+                <FieldRef Name="ManagerEmail" />
+                <FieldRef Name="ManagerName" />
+                <FieldRef Name="StartHour" />
+                <FieldRef Name="EndHour" />
+                <FieldRef Name="CheckIn" />
+                <FieldRef Name="CheckOut" />
+                <FieldRef Name="CheckOutTime" />
+                <FieldRef Name="EquipmentEnglishText" />
+                <FieldRef Name="EquipmentFrenchText" />
+                <FieldRef Name="ReasonDetail" />
+                <FieldRef Name="ReasonEnglishText" />
+                <FieldRef Name="ReasonFrenchText" />
+                <FieldRef Name="RecordCount" />
+                <FieldRef Name="Status" />
+                <FieldRef Name="VisitorCount" />
+                <FieldRef Name="VisitorReason" />
+                <FieldRef Name="Created" />
+                <FieldRef Name="Author" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+                <FieldRef Name="MissionCritical" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="Number" DisplayName="StartHour" Required="FALSE" Percentage="FALSE" ID="{efbf16c2-5f31-4fd6-a3ba-9f5c24542b2a}" StaticName="StartHour" Name="StartHour" SourceID="{{listid:AccessRequest_Trace}}" ColName="float1" RowOrdinal="0" />
+            <Field Type="Number" DisplayName="EndHour" Required="FALSE" Percentage="FALSE" ID="{d01ca3ee-d1ab-407e-acd6-a6f7d0774331}" StaticName="EndHour" Name="EndHour" SourceID="{{listid:AccessRequest_Trace}}" ColName="float2" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="FloorID" Required="FALSE" ID="{ce7197ae-68ad-4107-8707-5b00ab463e5d}" StaticName="FloorID" Name="FloorID" Indexed="TRUE" SourceID="{{listid:AccessRequest_Trace}}" ColName="nvarchar4" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="Status" Required="FALSE" ID="{69447401-42e6-4359-a72c-79f61a710f50}" StaticName="Status" Name="Status" Indexed="TRUE" SourceID="{{listid:AccessRequest_Trace}}" ColName="nvarchar5" RowOrdinal="0" />
+            <Field Type="Number" DisplayName="VisitorCount" Required="FALSE" Percentage="FALSE" ID="{37d31af3-47a1-4486-af77-798aff552f22}" StaticName="VisitorCount" Name="VisitorCount" SourceID="{{listid:AccessRequest_Trace}}" ColName="float3" RowOrdinal="0" />
+            <Field Type="DateTime" DisplayName="EntryDate" Required="FALSE" Format="DateOnly" ID="{857ac3dc-4998-4a77-aa04-0dff1b50f4bc}" StaticName="EntryDate" Name="EntryDate" Indexed="FALSE" SourceID="{{listid:AccessRequest_Trace}}" ColName="datetime1" RowOrdinal="0" />
+            <Field Type="Number" DisplayName="EntryDateID" Required="FALSE" Percentage="FALSE" ID="{c8d415ed-d9a2-4e09-860a-234cae27c31b}" StaticName="EntryDateID" Name="EntryDateID" Indexed="TRUE" AutoIndexed="TRUE" SourceID="{{listid:AccessRequest_Trace}}" ColName="float4" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="EmployeeLogin" Required="TRUE" ID="{8acae06b-2e3f-4668-b3a4-ca8ccaaa3548}" StaticName="EmployeeLogin" Name="EmployeeLogin" Indexed="TRUE" CustomFormatter="" EnforceUniqueValues="FALSE" MaxLength="255" SourceID="{{listid:AccessRequest_Trace}}" ColName="nvarchar6" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="EmployeeName" Required="TRUE" ID="{d753706c-8d10-497f-8d21-85d0f34a1ed2}" StaticName="EmployeeName" Name="EmployeeName" CustomFormatter="" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" SourceID="{{listid:AccessRequest_Trace}}" ColName="nvarchar7" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="EmployeeEmail" Required="FALSE" ID="{eceb10a4-87c4-474b-9b4b-200b98d05891}" StaticName="EmployeeEmail" Name="EmployeeEmail" SourceID="{{listid:AccessRequest_Trace}}" ColName="nvarchar8" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="ManagerLogin" Required="TRUE" ID="{4ee35001-7313-4551-b59b-ec08250b7265}" StaticName="ManagerLogin" Name="ManagerLogin" Indexed="TRUE" CustomFormatter="" EnforceUniqueValues="FALSE" MaxLength="255" SourceID="{{listid:AccessRequest_Trace}}" ColName="nvarchar9" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="ManagerName" Required="TRUE" ID="{36addd30-3430-4005-b3b8-10950d07f497}" StaticName="ManagerName" Name="ManagerName" CustomFormatter="" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" SourceID="{{listid:AccessRequest_Trace}}" ColName="nvarchar10" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="ManagerEmail" Required="FALSE" ID="{90b1e670-81c9-439d-956f-09b1c01b3c87}" StaticName="ManagerEmail" Name="ManagerEmail" SourceID="{{listid:AccessRequest_Trace}}" ColName="nvarchar11" RowOrdinal="0" />
+            <Field Type="Note" DisplayName="EquipmentEnglishText" Required="FALSE" RichText="TRUE" ID="{02b0c1ef-0eec-42e8-af22-d7d041f28ffe}" StaticName="EquipmentEnglishText" Name="EquipmentEnglishText" SourceID="{{listid:AccessRequest_Trace}}" ColName="ntext2" RowOrdinal="0" />
+            <Field Type="Note" DisplayName="EquipmentFrenchText" Required="FALSE" RichText="TRUE" ID="{fd96997f-7c79-4ad4-a732-371a9ed4d1f1}" StaticName="EquipmentFrenchText" Name="EquipmentFrenchText" SourceID="{{listid:AccessRequest_Trace}}" ColName="ntext3" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="ReasonEnglishText" Required="FALSE" ID="{640d24aa-263d-4165-aa6f-925d650623a8}" StaticName="ReasonEnglishText" Name="ReasonEnglishText" SourceID="{{listid:AccessRequest_Trace}}" ColName="nvarchar12" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="ReasonFrenchText" Required="FALSE" ID="{9887cf16-c849-421a-be93-717df861ca98}" StaticName="ReasonFrenchText" Name="ReasonFrenchText" SourceID="{{listid:AccessRequest_Trace}}" ColName="nvarchar13" RowOrdinal="0" />
+            <Field Type="Note" DisplayName="ReasonDetail" Required="FALSE" RichText="TRUE" ID="{8af9c96d-a53f-4988-a7a2-76fd1e46a868}" StaticName="ReasonDetail" Name="ReasonDetail" SourceID="{{listid:AccessRequest_Trace}}" ColName="ntext4" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="SeriesID" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="TRUE" MaxLength="255" ID="{dbb09c20-4997-4d2d-abfc-7a0be5d24df6}" StaticName="SeriesID" Name="SeriesID" CustomFormatter="" SourceID="{{listid:AccessRequest_Trace}}" ColName="nvarchar14" RowOrdinal="0" Version="1" />
+            <Field Type="Number" DisplayName="RequestCount" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="TRUE" ID="{31c02108-5bc1-4d5a-b747-c06ee5152421}" StaticName="RecordCount" Name="RecordCount" CustomFormatter="" Percentage="FALSE" AutoIndexed="TRUE" SourceID="{{listid:AccessRequest_Trace}}" ColName="float5" RowOrdinal="0" />
+            <Field Type="DateTime" DisplayName="CheckIn" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateTime" FriendlyDisplayFormat="Disabled" ID="{5eed3264-1049-4087-8207-fe9f6197881c}" StaticName="CheckIn" Name="CheckIn" SourceID="{{listid:AccessRequest_Trace}}" ColName="datetime2" RowOrdinal="0" />
+            <Field Type="DateTime" DisplayName="CheckOut" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateTime" FriendlyDisplayFormat="Disabled" ID="{539865f2-294a-489d-9623-578d953f841b}" StaticName="CheckOut" Name="CheckOut" SourceID="{{listid:AccessRequest_Trace}}" ColName="datetime3" RowOrdinal="0" />
+            <Field Type="Note" DisplayName="VisitorReason" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RichText="TRUE" RichTextMode="FullHtml" IsolateStyles="TRUE" Sortable="FALSE" ID="{74b6d7c0-d119-461c-83fc-fd7bc3a34543}" StaticName="VisitorReason" Name="VisitorReason" SourceID="{{listid:AccessRequest_Trace}}" ColName="ntext5" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="CheckOutTime" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{0ee4a8bc-2b78-4466-acdf-d016bd5673ba}" StaticName="CheckOutTime" Name="CheckOutTime" SourceID="{{listid:AccessRequest_Trace}}" ColName="nvarchar15" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="BuildingID" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{e1cbc840-926d-422a-9c2e-4d5b8cc36b0c}" StaticName="BuildingID" Name="BuildingID" SourceID="{{listid:AccessRequest_Trace}}" ColName="nvarchar16" RowOrdinal="0" />
+            <Field Type="Boolean" DisplayName="MissionCritical" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{c462e74e-503e-4f92-b1f9-9775d7773b47}" StaticName="MissionCritical" Name="MissionCritical" SourceID="{{listid:AccessRequest_Trace}}" ColName="bit1" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+          </pnp:Fields>
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false">
+              <pnp:RoleAssignment Principal="{associatedownergroupid}" RoleDefinition="Full Control" />
+              <pnp:RoleAssignment Principal="Contact Tracing Readers" RoleDefinition="Read" />
+            </pnp:BreakRoleInheritance>
+          </pnp:Security>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="ActiveDirectory_Dashboard" Description="" DocumentTemplate="" OnQuickLaunch="true" TemplateType="100" Url="Lists/ActiveDirectory_Dashboard" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/ActiveDirectory_Dashboard/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/ActiveDirectory_Dashboard/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/ActiveDirectory_Dashboard/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:PropertyBagEntries>
+            <pnp:PropertyBagEntry Key="wte_Source" Value="https://007gc.sharepoint.com/sites/RetourauLieudeTravail-ReturntotheWorkplace/Lists/ActiveDirectory_Dashboard/AllItems.aspx" Overwrite="false" />
+          </pnp:PropertyBagEntries>
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{AE44D5B8-D43E-43B2-ACE3-677414B79078}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/ActiveDirectory_Dashboard/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query />
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="O365LoginName" />
+                <FieldRef Name="SectorBranch" />
+                <FieldRef Name="FirstName" />
+                <FieldRef Name="LastName" />
+                <FieldRef Name="Name" />
+                <FieldRef Name="EmailAddress" />
+                <FieldRef Name="CostCentre" />
+                <FieldRef Name="CostCentreNumber" />
+                <FieldRef Name="Classification" />
+                <FieldRef Name="JobTitle" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+              <CustomFormatter><![CDATA[]]></CustomFormatter>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field DisplayName="FirstName" Format="Dropdown" MaxLength="255" Name="FirstName" Title="FirstName" Type="Text" ID="{3dc8e7c0-5ef3-4fcc-864a-e957df8c0ebe}" StaticName="FirstName" SourceID="{{listid:ActiveDirectory_Dashboard}}" ColName="nvarchar4" RowOrdinal="0" />
+            <Field DisplayName="LastName" Format="Dropdown" MaxLength="255" Name="LastName" Title="LastName" Type="Text" ID="{9b75ab04-086d-4564-b41c-960e6c5b84b9}" StaticName="LastName" SourceID="{{listid:ActiveDirectory_Dashboard}}" ColName="nvarchar5" RowOrdinal="0" />
+            <Field DisplayName="Name" Format="Dropdown" MaxLength="255" Name="Name" Title="Name" Type="Text" ID="{61fb5ffb-77ee-485b-beb0-f5368bbdc400}" StaticName="Name" SourceID="{{listid:ActiveDirectory_Dashboard}}" ColName="nvarchar6" RowOrdinal="0" />
+            <Field DisplayName="O365LoginName" Format="Dropdown" MaxLength="255" Name="O365LoginName" Title="O365LoginName" Type="Text" ID="{4ac0ead8-5904-4f5a-b632-19b702ad9115}" StaticName="O365LoginName" SourceID="{{listid:ActiveDirectory_Dashboard}}" ColName="nvarchar7" RowOrdinal="0" />
+            <Field DisplayName="EmailAddress" Format="Dropdown" MaxLength="255" Name="EmailAddress" Title="EmailAddress" Type="Text" ID="{c59ef4f5-0f01-4a6e-af3d-c1218c071b90}" StaticName="EmailAddress" SourceID="{{listid:ActiveDirectory_Dashboard}}" ColName="nvarchar8" RowOrdinal="0" />
+            <Field DisplayName="CostCentre" Format="Dropdown" MaxLength="255" Name="CostCentre" Title="CostCentre" Type="Text" ID="{26581b8f-0c74-417e-9fff-44bb9dd7f961}" StaticName="CostCentre" SourceID="{{listid:ActiveDirectory_Dashboard}}" ColName="nvarchar9" RowOrdinal="0" />
+            <Field DisplayName="CostCentreNumber" Format="Dropdown" MaxLength="255" Name="CostCentreNumber" Title="CostCentreNumber" Type="Text" ID="{e56cd648-39da-4c89-8372-8e7825bfe900}" StaticName="CostCentreNumber" SourceID="{{listid:ActiveDirectory_Dashboard}}" ColName="nvarchar10" RowOrdinal="0" />
+            <Field DisplayName="SectorBranch" Format="Dropdown" MaxLength="255" Name="SectorBranch" Title="SectorBranch" Type="Text" ID="{3edb02d8-2398-452c-a6d3-e582837e5942}" StaticName="SectorBranch" SourceID="{{listid:ActiveDirectory_Dashboard}}" ColName="nvarchar11" RowOrdinal="0" />
+            <Field DisplayName="Classification" Format="Dropdown" MaxLength="255" Name="Classification" Title="Classification" Type="Text" ID="{583abf5c-cc57-4644-b598-c25efa228298}" StaticName="Classification" SourceID="{{listid:ActiveDirectory_Dashboard}}" ColName="nvarchar12" RowOrdinal="0" />
+            <Field DisplayName="JobTitle" Format="Dropdown" MaxLength="255" Name="JobTitle" Title="JobTitle" Type="Text" ID="{9033a6e9-5601-48a2-9b6b-0b2e433e8e64}" StaticName="JobTitle" SourceID="{{listid:ActiveDirectory_Dashboard}}" ColName="nvarchar13" RowOrdinal="0" />
+          </pnp:Fields>
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false">
+              <pnp:RoleAssignment Principal="{associatedownergroupid}" RoleDefinition="Full Control" />
+              <pnp:RoleAssignment Principal="Dashboard Readers" RoleDefinition="Read" />
+            </pnp:BreakRoleInheritance>
+          </pnp:Security>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Building" Description="" DocumentTemplate="" TemplateType="120" Url="Lists/Building1" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-3a1d-41d3-a0ee-651d11570120" EnableFolderCreation="false" NoCrawl="true" DefaultDisplayFormUrl="{site}/Lists/Building1/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Building1/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Building1/NewForm.aspx" ImageUrl="/_layouts/15/images/itdatash.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{1081E165-A898-4658-8493-390507BB63CE}" DefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/Building1/Allitemsg.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="BuildingEnglishText" />
+                <FieldRef Name="BuildingFrenchText" />
+                <FieldRef Name="BuildingShortText" />
+                <FieldRef Name="RegionEnglishText" />
+                <FieldRef Name="RegionFrenchText" />
+                <FieldRef Name="RegionSortOrder" />
+                <FieldRef Name="Address" />
+                <FieldRef Name="City" />
+                <FieldRef Name="TimeZone" />
+                <FieldRef Name="TimeZoneOffset" />
+                <FieldRef Name="CommissionaireEmail" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="Text" DisplayName="BuildingEnglishText" Required="FALSE" ID="{28b5e657-41f2-4141-b315-e95ad31362ba}" SourceID="{{listid:Building}}" StaticName="BuildingEnglishText" Name="BuildingEnglishText" ColName="nvarchar4" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="BuildingFrenchText" Required="FALSE" ID="{90b88f1e-82eb-4798-ade6-e0469b2211db}" SourceID="{{listid:Building}}" StaticName="BuildingFrenchText" Name="BuildingFrenchText" ColName="nvarchar5" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="BuildingShortText" Required="FALSE" ID="{07441afc-c950-4286-bf47-99d82428f3e8}" SourceID="{{listid:Building}}" StaticName="BuildingShortText" Name="BuildingShortText" ColName="nvarchar6" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="RegionEnglishText" Required="FALSE" ID="{baa8e3fc-4694-4c29-941d-b4fe209f49e4}" SourceID="{{listid:Building}}" StaticName="RegionEnglishText" Name="RegionEnglishText" ColName="nvarchar7" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="RegionFrenchText" Required="FALSE" ID="{9bb99a6b-9818-4269-b62e-4c0dbff1acfb}" SourceID="{{listid:Building}}" StaticName="RegionFrenchText" Name="RegionFrenchText" ColName="nvarchar8" RowOrdinal="0" />
+            <Field Type="Number" DisplayName="RegionSortOrder" Required="FALSE" Percentage="FALSE" ID="{fe2adf1c-c500-4c52-b344-077eec6e49db}" SourceID="{{listid:Building}}" StaticName="RegionSortOrder" Name="RegionSortOrder" ColName="float1" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="Address" Required="FALSE" ID="{d6a85dec-eba2-428c-87af-d760dbcb3c4a}" SourceID="{{listid:Building}}" StaticName="Address" Name="Address" ColName="nvarchar9" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="City" Required="FALSE" ID="{92966af1-02af-44be-b833-76a3a0ce2283}" SourceID="{{listid:Building}}" StaticName="City" Name="City" ColName="nvarchar10" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="TimeZone" Required="FALSE" ID="{0b754673-2380-4cfb-ad5a-f307557e4800}" SourceID="{{listid:Building}}" StaticName="TimeZone" Name="TimeZone" ColName="nvarchar11" RowOrdinal="0" />
+            <Field Type="Number" DisplayName="TimeZoneOffset" Required="FALSE" Percentage="FALSE" ID="{99e7b84e-2beb-4f91-aab4-104e1d262af3}" SourceID="{{listid:Building}}" StaticName="TimeZoneOffset" Name="TimeZoneOffset" ColName="float2" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="CommissionaireEmail" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{58569aee-266a-41c2-9053-2a835a5ec9aa}" SourceID="{{listid:Building}}" StaticName="CommissionaireEmail" Name="CommissionaireEmail" ColName="nvarchar12" RowOrdinal="0" />
+          </pnp:Fields>
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false">
+              <pnp:RoleAssignment Principal="{associatedownergroupid}" RoleDefinition="Full Control" />
+              <pnp:RoleAssignment Principal="Dashboard Readers" RoleDefinition="Read" />
+              <pnp:RoleAssignment Principal="Contact Tracing Readers" RoleDefinition="Read" />
+              <pnp:RoleAssignment Principal="Equipment Dashboard Readers" RoleDefinition="Read" />
+            </pnp:BreakRoleInheritance>
+          </pnp:Security>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Date_Dashboard" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/Date_Dashboard" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Date_Dashboard/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Date_Dashboard/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Date_Dashboard/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{0192C5E0-FC0A-48B4-9F7F-5A447F910B5E}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/Date_Dashboard/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="DateKey" />
+                <FieldRef Name="Date" />
+                <FieldRef Name="DateType" />
+                <FieldRef Name="MonthStartDate" />
+                <FieldRef Name="MonthEndDate" />
+                <FieldRef Name="Month" />
+                <FieldRef Name="MonthOrder" />
+                <FieldRef Name="QuarterStartDate" />
+                <FieldRef Name="QuarterEndDate" />
+                <FieldRef Name="QuarterShort" />
+                <FieldRef Name="QuarterShortOrder" />
+                <FieldRef Name="YearStartDate" />
+                <FieldRef Name="YearEndDate" />
+                <FieldRef Name="FiscalYearStartDate" />
+                <FieldRef Name="FiscalYearEndDate" />
+                <FieldRef Name="FiscalYear" />
+                <FieldRef Name="FiscalYearOrder" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+              <CustomFormatter />
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field DisplayName="DateKey" FriendlyDisplayFormat="Disabled" Format="DateOnly" IsModern="TRUE" Name="DateKey" Title="DateKey" Type="DateTime" ID="{3c1d0123-4107-48d0-b548-efcf958ed029}" SourceID="{{listid:Date_Dashboard}}" StaticName="DateKey" ColName="datetime1" RowOrdinal="0" />
+            <Field DisplayName="Date" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="Date" Title="Date" Type="Text" ID="{f74aaff5-6677-4283-ba20-08ba7ef038d0}" SourceID="{{listid:Date_Dashboard}}" StaticName="Date" ColName="nvarchar4" RowOrdinal="0" />
+            <Field DisplayName="DateType" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="DateType" Title="DateType" Type="Text" ID="{be9c4872-2cb9-479f-a92e-930de8a4fffe}" SourceID="{{listid:Date_Dashboard}}" StaticName="DateType" ColName="nvarchar5" RowOrdinal="0" />
+            <Field DisplayName="MonthStartDate" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="MonthStartDate" Title="MonthStartDate" Type="Text" ID="{6e55dece-a67c-4441-a692-9bc75d824f22}" SourceID="{{listid:Date_Dashboard}}" StaticName="MonthStartDate" ColName="nvarchar6" RowOrdinal="0" />
+            <Field DisplayName="MonthEndDate" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="MonthEndDate" Title="MonthEndDate" Type="Text" ID="{bfe5315d-6e85-45e6-8f53-4fa227924043}" SourceID="{{listid:Date_Dashboard}}" StaticName="MonthEndDate" ColName="nvarchar7" RowOrdinal="0" />
+            <Field DisplayName="Month" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="Month" Title="Month" Type="Text" ID="{03c94747-8593-4cc7-bab3-8af705d84430}" SourceID="{{listid:Date_Dashboard}}" StaticName="Month" ColName="nvarchar8" RowOrdinal="0" />
+            <Field CommaSeparator="TRUE" DisplayName="MonthOrder" Format="Dropdown" IsModern="TRUE" Name="MonthOrder" Percentage="FALSE" Title="MonthOrder" Type="Number" ID="{bafc36bc-b623-4983-b614-c00bb19cf639}" SourceID="{{listid:Date_Dashboard}}" StaticName="MonthOrder" ColName="float1" RowOrdinal="0" />
+            <Field DisplayName="QuarterStartDate" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="QuarterStartDate" Title="QuarterStartDate" Type="Text" ID="{6a1859ee-67de-48a5-8d9c-d52d038e6602}" SourceID="{{listid:Date_Dashboard}}" StaticName="QuarterStartDate" ColName="nvarchar9" RowOrdinal="0" />
+            <Field DisplayName="QuarterEndDate" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="QuarterEndDate" Title="QuarterEndDate" Type="Text" ID="{2361324a-39ba-4973-b3cd-6917da165c74}" SourceID="{{listid:Date_Dashboard}}" StaticName="QuarterEndDate" ColName="nvarchar10" RowOrdinal="0" />
+            <Field DisplayName="QuarterShort" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="QuarterShort" Title="QuarterShort" Type="Text" ID="{264a25c5-fb7f-42b4-821d-9b31773b5440}" SourceID="{{listid:Date_Dashboard}}" StaticName="QuarterShort" ColName="nvarchar11" RowOrdinal="0" />
+            <Field CommaSeparator="TRUE" DisplayName="QuarterShortOrder" Format="Dropdown" IsModern="TRUE" Name="QuarterShortOrder" Percentage="FALSE" Title="QuarterShortOrder" Type="Number" ID="{588dee57-74bf-4053-8f7d-51c941d1ec23}" SourceID="{{listid:Date_Dashboard}}" StaticName="QuarterShortOrder" ColName="float2" RowOrdinal="0" />
+            <Field DisplayName="YearStartDate" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="YearStartDate" Title="YearStartDate" Type="Text" ID="{21895aa5-6b03-456f-a6ae-c1d3bc1b787f}" SourceID="{{listid:Date_Dashboard}}" StaticName="YearStartDate" ColName="nvarchar12" RowOrdinal="0" />
+            <Field DisplayName="YearEndDate" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="YearEndDate" Title="YearEndDate" Type="Text" ID="{63a2f673-aef7-4f2b-ba48-767c0626a84a}" SourceID="{{listid:Date_Dashboard}}" StaticName="YearEndDate" ColName="nvarchar13" RowOrdinal="0" />
+            <Field DisplayName="FiscalYearStartDate" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="FiscalYearStartDate" Title="FiscalYearStartDate" Type="Text" ID="{ccf663b0-de26-4927-93c6-729a97fbbfa2}" SourceID="{{listid:Date_Dashboard}}" StaticName="FiscalYearStartDate" ColName="nvarchar14" RowOrdinal="0" />
+            <Field DisplayName="FiscalYearEndDate" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="FiscalYearEndDate" Title="FiscalYearEndDate" Type="Text" ID="{15a27bf9-858f-44db-a0e3-d1eb307934d8}" SourceID="{{listid:Date_Dashboard}}" StaticName="FiscalYearEndDate" ColName="nvarchar15" RowOrdinal="0" />
+            <Field DisplayName="FiscalYear" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="FiscalYear" Title="FiscalYear" Type="Text" ID="{e2258fc1-3d31-4b31-8653-adbba1837d7b}" SourceID="{{listid:Date_Dashboard}}" StaticName="FiscalYear" ColName="nvarchar16" RowOrdinal="0" />
+            <Field DisplayName="FiscalYearOrder" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="FiscalYearOrder" Title="FiscalYearOrder" Type="Text" ID="{e7b92380-8971-4f50-848e-ff5ed4834ccc}" SourceID="{{listid:Date_Dashboard}}" StaticName="FiscalYearOrder" ColName="nvarchar17" RowOrdinal="0" />
+          </pnp:Fields>
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false">
+              <pnp:RoleAssignment Principal="{associatedownergroupid}" RoleDefinition="Full Control" />
+              <pnp:RoleAssignment Principal="Dashboard Readers" RoleDefinition="Read" />
+              <pnp:RoleAssignment Principal="Contact Tracing Readers" RoleDefinition="Read" />
+            </pnp:BreakRoleInheritance>
+          </pnp:Security>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Equipment_Dashboard" Description="" DocumentTemplate="" TemplateType="120" Url="Lists/Equipment_Dashboard" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-3a1d-41d3-a0ee-651d11570120" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Equipment_Dashboard/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Equipment_Dashboard/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Equipment_Dashboard/NewForm.aspx" ImageUrl="/_layouts/15/images/itdatash.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:PropertyBagEntries>
+            <pnp:PropertyBagEntry Key="wte_Source" Value="https://007gc.sharepoint.com/sites/OfficeEntry-Pilot/Lists/AccessRequest_Dashboard/Allitemsg.aspx" Overwrite="false" />
+          </pnp:PropertyBagEntries>
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{E224FF67-B0FF-419E-9BCB-D2702C0968AC}" DefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/Equipment_Dashboard/Allitemsg.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" Ascending="FALSE" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="ID" />
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="EmployeeName" />
+                <FieldRef Name="EmployeeEmail" />
+                <FieldRef Name="_x0077_rd5" />
+                <FieldRef Name="ManagerEmail" />
+                <FieldRef Name="ManagerName" />
+                <FieldRef Name="Status" />
+                <FieldRef Name="EntryDate" />
+                <FieldRef Name="StartHour" />
+                <FieldRef Name="EndHour" />
+                <FieldRef Name="pqzf" />
+                <FieldRef Name="dc7r" />
+                <FieldRef Name="EquipmentEnglishText" />
+                <FieldRef Name="EquipmentFrenchText" />
+                <FieldRef Name="Created" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <ViewData />
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="Text" DisplayName="EmployeeName" Required="TRUE" ID="{d753706c-8d10-497f-8d21-85d0f34a1ed2}" StaticName="EmployeeName" Name="EmployeeName" CustomFormatter="" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" SourceID="{{listid:Equipment_Dashboard}}" ColName="nvarchar4" RowOrdinal="0" />
+            <Field Name="dc7r" DisplayName="Building/Site" Type="Text" ID="{0e969919-38ac-41ff-a35f-a98cf1f6fb86}" SourceID="{{listid:Equipment_Dashboard}}" StaticName="dc7r" ColName="nvarchar5" RowOrdinal="0" Version="3" CustomFormatter="" Required="TRUE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" />
+            <Field Name="pqzf" DisplayName="Region" Type="Text" ID="{71aff2c5-fee2-4e78-97a6-ea00a08ac204}" SourceID="{{listid:Equipment_Dashboard}}" StaticName="pqzf" ColName="nvarchar6" RowOrdinal="0" Version="3" CustomFormatter="" Required="TRUE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" />
+            <Field Type="Text" DisplayName="Status" Required="TRUE" ID="{69447401-42e6-4359-a72c-79f61a710f50}" StaticName="Status" Name="Status" Indexed="FALSE" SourceID="{{listid:Equipment_Dashboard}}" ColName="nvarchar7" RowOrdinal="0" CustomFormatter="" EnforceUniqueValues="FALSE" MaxLength="255" Version="1" />
+            <Field Type="DateTime" DisplayName="EntryDate" Required="TRUE" Format="DateOnly" ID="{857ac3dc-4998-4a77-aa04-0dff1b50f4bc}" StaticName="EntryDate" Name="EntryDate" Indexed="TRUE" SourceID="{{listid:Equipment_Dashboard}}" ColName="datetime1" RowOrdinal="0" CustomFormatter="" EnforceUniqueValues="FALSE" CalType="0" FriendlyDisplayFormat="Disabled" Version="1" />
+            <Field Type="Note" DisplayName="EquipmentEnglishText" Required="TRUE" RichText="TRUE" ID="{02b0c1ef-0eec-42e8-af22-d7d041f28ffe}" StaticName="EquipmentEnglishText" Name="EquipmentEnglishText" SourceID="{{listid:Equipment_Dashboard}}" ColName="ntext2" RowOrdinal="0" CustomFormatter="" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RestrictedMode="TRUE" RichTextMode="Compatible" IsolateStyles="FALSE" AppendOnly="FALSE" Version="1" />
+            <Field Type="Note" DisplayName="EquipmentFrenchText" Required="TRUE" RichText="TRUE" ID="{fd96997f-7c79-4ad4-a732-371a9ed4d1f1}" StaticName="EquipmentFrenchText" Name="EquipmentFrenchText" SourceID="{{listid:Equipment_Dashboard}}" ColName="ntext3" RowOrdinal="0" CustomFormatter="" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RestrictedMode="TRUE" RichTextMode="Compatible" IsolateStyles="FALSE" AppendOnly="FALSE" Version="1" />
+            <Field Type="Number" DisplayName="StartHour" Required="FALSE" Percentage="FALSE" ID="{efbf16c2-5f31-4fd6-a3ba-9f5c24542b2a}" StaticName="StartHour" Name="StartHour" SourceID="{{listid:Equipment_Dashboard}}" ColName="float1" RowOrdinal="0" />
+            <Field Type="Number" DisplayName="EndHour" Required="FALSE" Percentage="FALSE" ID="{d01ca3ee-d1ab-407e-acd6-a6f7d0774331}" StaticName="EndHour" Name="EndHour" SourceID="{{listid:Equipment_Dashboard}}" ColName="float2" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="FloorID" Required="FALSE" ID="{ce7197ae-68ad-4107-8707-5b00ab463e5d}" StaticName="FloorID" Name="FloorID" Indexed="FALSE" SourceID="{{listid:Equipment_Dashboard}}" ColName="nvarchar8" RowOrdinal="0" />
+            <Field Type="Number" DisplayName="VisitorCount" Required="FALSE" Percentage="FALSE" ID="{37d31af3-47a1-4486-af77-798aff552f22}" StaticName="VisitorCount" Name="VisitorCount" SourceID="{{listid:Equipment_Dashboard}}" ColName="float3" RowOrdinal="0" />
+            <Field Type="Number" DisplayName="EntryDateID" Required="FALSE" Percentage="FALSE" ID="{c8d415ed-d9a2-4e09-860a-234cae27c31b}" StaticName="EntryDateID" Name="EntryDateID" Indexed="FALSE" SourceID="{{listid:Equipment_Dashboard}}" ColName="float4" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="EmployeeLogin" Required="FALSE" ID="{8acae06b-2e3f-4668-b3a4-ca8ccaaa3548}" StaticName="EmployeeLogin" Name="EmployeeLogin" Indexed="FALSE" CustomFormatter="" EnforceUniqueValues="FALSE" MaxLength="255" SourceID="{{listid:Equipment_Dashboard}}" ColName="nvarchar9" RowOrdinal="0" Version="1" />
+            <Field Type="Text" DisplayName="EmployeeEmail" Required="FALSE" ID="{eceb10a4-87c4-474b-9b4b-200b98d05891}" StaticName="EmployeeEmail" Name="EmployeeEmail" SourceID="{{listid:Equipment_Dashboard}}" ColName="nvarchar10" RowOrdinal="0" CustomFormatter="" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Version="1" />
+            <Field Type="Text" DisplayName="ManagerLogin" Required="FALSE" ID="{4ee35001-7313-4551-b59b-ec08250b7265}" StaticName="ManagerLogin" Name="ManagerLogin" Indexed="FALSE" CustomFormatter="" EnforceUniqueValues="FALSE" MaxLength="255" SourceID="{{listid:Equipment_Dashboard}}" ColName="nvarchar11" RowOrdinal="0" Version="1" />
+            <Field Type="Text" DisplayName="ManagerName" Required="FALSE" ID="{36addd30-3430-4005-b3b8-10950d07f497}" StaticName="ManagerName" Name="ManagerName" CustomFormatter="" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" SourceID="{{listid:Equipment_Dashboard}}" ColName="nvarchar12" RowOrdinal="0" Version="1" />
+            <Field Type="Text" DisplayName="ManagerEmail" Required="FALSE" ID="{90b1e670-81c9-439d-956f-09b1c01b3c87}" StaticName="ManagerEmail" Name="ManagerEmail" SourceID="{{listid:Equipment_Dashboard}}" ColName="nvarchar13" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="ReasonEnglishText" Required="FALSE" ID="{640d24aa-263d-4165-aa6f-925d650623a8}" StaticName="ReasonEnglishText" Name="ReasonEnglishText" SourceID="{{listid:Equipment_Dashboard}}" ColName="nvarchar14" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="ReasonFrenchText" Required="FALSE" ID="{9887cf16-c849-421a-be93-717df861ca98}" StaticName="ReasonFrenchText" Name="ReasonFrenchText" SourceID="{{listid:Equipment_Dashboard}}" ColName="nvarchar15" RowOrdinal="0" />
+            <Field Type="Note" DisplayName="ReasonDetail" Required="FALSE" RichText="TRUE" ID="{8af9c96d-a53f-4988-a7a2-76fd1e46a868}" StaticName="ReasonDetail" Name="ReasonDetail" SourceID="{{listid:Equipment_Dashboard}}" ColName="ntext4" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="SeriesID" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{dbb09c20-4997-4d2d-abfc-7a0be5d24df6}" StaticName="SeriesID" Name="SeriesID" CustomFormatter="" SourceID="{{listid:Equipment_Dashboard}}" ColName="nvarchar16" RowOrdinal="0" Version="1" />
+            <Field Type="Number" DisplayName="RequestCount" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{31c02108-5bc1-4d5a-b747-c06ee5152421}" StaticName="RecordCount" Name="RecordCount" CustomFormatter="" Percentage="FALSE" SourceID="{{listid:Equipment_Dashboard}}" ColName="float5" RowOrdinal="0" />
+            <Field Type="DateTime" DisplayName="CheckIn" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateTime" FriendlyDisplayFormat="Disabled" ID="{5eed3264-1049-4087-8207-fe9f6197881c}" StaticName="CheckIn" Name="CheckIn" SourceID="{{listid:Equipment_Dashboard}}" ColName="datetime2" RowOrdinal="0" />
+            <Field Type="DateTime" DisplayName="CheckOut" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateTime" FriendlyDisplayFormat="Disabled" ID="{539865f2-294a-489d-9623-578d953f841b}" StaticName="CheckOut" Name="CheckOut" SourceID="{{listid:Equipment_Dashboard}}" ColName="datetime3" RowOrdinal="0" />
+            <Field Type="Note" DisplayName="VisitorReason" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RichText="TRUE" RichTextMode="FullHtml" IsolateStyles="TRUE" Sortable="FALSE" ID="{74b6d7c0-d119-461c-83fc-fd7bc3a34543}" StaticName="VisitorReason" Name="VisitorReason" SourceID="{{listid:Equipment_Dashboard}}" ColName="ntext5" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="CheckOutTime" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{0ee4a8bc-2b78-4466-acdf-d016bd5673ba}" StaticName="CheckOutTime" Name="CheckOutTime" SourceID="{{listid:Equipment_Dashboard}}" ColName="nvarchar17" RowOrdinal="0" />
+            <Field Name="_x0077_rd5" DisplayName="BranchDirectorate" Type="Text" ID="{3fae06a7-b16a-4d0c-8bb7-2d0f2cd627b0}" SourceID="{{listid:Equipment_Dashboard}}" StaticName="_x0077_rd5" ColName="nvarchar18" RowOrdinal="0" Version="3" />
+          </pnp:Fields>
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false">
+              <pnp:RoleAssignment Principal="{associatedownergroupid}" RoleDefinition="Full Control" />
+              <pnp:RoleAssignment Principal="Equipment Dashboard Readers" RoleDefinition="Read" />
+              <pnp:RoleAssignment Principal="i:0#.f|membership|guillaume.desrosiers@ec.gc.ca" RoleDefinition="Read" />
+              <pnp:RoleAssignment Principal="i:0#.f|membership|patrick.lombard@ec.gc.ca" RoleDefinition="Read" />
+              <pnp:RoleAssignment Principal="i:0#.f|membership|david.parker2@ec.gc.ca" RoleDefinition="Read" />
+            </pnp:BreakRoleInheritance>
+          </pnp:Security>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Floor" Description="" DocumentTemplate="" TemplateType="120" Url="Lists/Floor" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-3a1d-41d3-a0ee-651d11570120" EnableFolderCreation="false" NoCrawl="true" DefaultDisplayFormUrl="{site}/Lists/Floor/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Floor/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Floor/NewForm.aspx" ImageUrl="/_layouts/15/images/itdatash.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{7F68C4FC-0F0B-4554-9D48-8AACEC2F6AFB}" DefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/Floor/Allitemsg.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="BuildingID" />
+                <FieldRef Name="FloorEnglishText" />
+                <FieldRef Name="FloorFrenchText" />
+                <FieldRef Name="FloorSortOrder" />
+                <FieldRef Name="Capacity" />
+                <FieldRef Name="CurrentCapacity" />
+                <FieldRef Name="DefaultCapacityPortion" />
+                <FieldRef Name="ModifiedCapacityFlag" />
+                <FieldRef Name="ChangeReason" />
+                <FieldRef Name="MissionCritical" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+              <CustomFormatter />
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="Text" DisplayName="BuildingID" Required="FALSE" ID="{c3dedcc9-7663-46cf-a14a-1a9b0a963259}" SourceID="{{listid:Floor}}" StaticName="BuildingID" Name="BuildingID" ColName="nvarchar4" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="FloorEnglishText" Required="FALSE" ID="{eec50729-8de2-4ac1-aafd-d34e531461a0}" SourceID="{{listid:Floor}}" StaticName="FloorEnglishText" Name="FloorEnglishText" ColName="nvarchar5" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="FloorFrenchText" Required="FALSE" ID="{c9fe99a6-cf6e-4a77-920a-3b4573f706a4}" SourceID="{{listid:Floor}}" StaticName="FloorFrenchText" Name="FloorFrenchText" ColName="nvarchar6" RowOrdinal="0" />
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" CommaSeparator="TRUE" DisplayName="FloorSortOrder" Format="Dropdown" IsModern="TRUE" Name="FloorSortOrder" Percentage="FALSE" Title="FloorSortOrder" Type="Number" ID="{bd459b42-38b2-40ca-8687-29b3a8229578}" Version="2" StaticName="FloorSortOrder" SourceID="{{listid:Floor}}" ColName="float1" RowOrdinal="0" />
+            <Field Type="Number" DisplayName="Capacity" Required="FALSE" Percentage="FALSE" ID="{7ab69d0f-3f81-43c8-a92f-b5013f2273ea}" SourceID="{{listid:Floor}}" StaticName="Capacity" Name="Capacity" ColName="float2" RowOrdinal="0" />
+            <Field Type="Number" DisplayName="CurrentCapacity" Required="FALSE" Percentage="FALSE" ID="{b75a8edb-2bce-4b0c-83ea-e17f3771e974}" SourceID="{{listid:Floor}}" StaticName="CurrentCapacity" Name="CurrentCapacity" ColName="float3" RowOrdinal="0" />
+            <Field Type="Number" DisplayName="DefaultCapacityPortion" Required="FALSE" Percentage="FALSE" ID="{b0aa8b4e-ab1b-4a7a-9f11-958a3c45bc52}" SourceID="{{listid:Floor}}" StaticName="DefaultCapacityPortion" Name="DefaultCapacityPortion" ColName="float4" RowOrdinal="0" />
+            <Field Type="Boolean" DisplayName="ModifiedCapacityFlag" ID="{2d5ace94-f2b0-4a0e-b65e-5ffbd238ebdf}" SourceID="{{listid:Floor}}" StaticName="ModifiedCapacityFlag" Name="ModifiedCapacityFlag" ColName="bit1" RowOrdinal="0">
+              <Default>-1</Default>
+            </Field>
+            <Field Type="Text" DisplayName="ChangeReason" Required="FALSE" ID="{5b7961ec-a5cd-4a13-bff5-8e6c712a4dd0}" SourceID="{{listid:Floor}}" StaticName="ChangeReason" Name="ChangeReason" ColName="nvarchar7" RowOrdinal="0" />
+            <Field Type="Boolean" DisplayName="MissionCritical" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{e9f191e4-7692-4633-a26d-9e883e6b2b86}" SourceID="{{listid:Floor}}" StaticName="MissionCritical" Name="MissionCritical" ColName="bit2" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+          </pnp:Fields>
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false">
+              <pnp:RoleAssignment Principal="{associatedownergroupid}" RoleDefinition="Full Control" />
+              <pnp:RoleAssignment Principal="Dashboard Readers" RoleDefinition="Read" />
+              <pnp:RoleAssignment Principal="Contact Tracing Readers" RoleDefinition="Read" />
+              <pnp:RoleAssignment Principal="Equipment Dashboard Readers" RoleDefinition="Read" />
+            </pnp:BreakRoleInheritance>
+          </pnp:Security>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="VisitorLog_Trace" Description="" DocumentTemplate="" TemplateType="120" Url="Lists/VisitorLog" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-3a1d-41d3-a0ee-651d11570120" EnableFolderCreation="false" NoCrawl="true" DefaultDisplayFormUrl="{site}/Lists/VisitorLog/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/VisitorLog/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/VisitorLog/NewForm.aspx" ImageUrl="/_layouts/15/images/itdatash.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{EC9B588A-6D49-47E0-A721-5AFC2C51F874}" DefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/VisitorLog/Allitemsg.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="AccessRequestID" />
+                <FieldRef Name="VisitorName" />
+                <FieldRef Name="VisitorEmail" />
+                <FieldRef Name="VisitorPhone" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="Text" DisplayName="AccessRequestID" Required="FALSE" ID="{25ee0b29-2e20-4c09-955a-defa154e6d70}" SourceID="{{listid:VisitorLog_Trace}}" StaticName="AccessRequestID" Name="AccessRequestID" ColName="nvarchar4" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="VisitorName" Required="FALSE" ID="{0f0f1c3e-d96e-4953-b80b-f8bdd992cd16}" SourceID="{{listid:VisitorLog_Trace}}" StaticName="VisitorName" Name="VisitorName" ColName="nvarchar5" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="VisitorEmail" Required="FALSE" ID="{a1b76442-95df-44c0-852a-9123f17496c8}" SourceID="{{listid:VisitorLog_Trace}}" StaticName="VisitorEmail" Name="VisitorEmail" ColName="nvarchar6" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="VisitorPhone" Required="FALSE" ID="{36da3371-f562-4479-b0f1-b91b390d5508}" SourceID="{{listid:VisitorLog_Trace}}" StaticName="VisitorPhone" Name="VisitorPhone" ColName="nvarchar7" RowOrdinal="0" />
+          </pnp:Fields>
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false">
+              <pnp:RoleAssignment Principal="{associatedownergroupid}" RoleDefinition="Full Control" />
+              <pnp:RoleAssignment Principal="Contact Tracing Readers" RoleDefinition="Read" />
+            </pnp:BreakRoleInheritance>
+          </pnp:Security>
+        </pnp:ListInstance>
+      </pnp:Lists>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>
