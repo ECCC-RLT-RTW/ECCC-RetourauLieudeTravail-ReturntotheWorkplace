@@ -7,7 +7,7 @@
 
 ## Application change Overview
 
-See the Documentation\RTW DoJ Version 2 features.docx for more details
+See the [Documentation\RTW DoJ Version 2 features.docx](https://github.com/ECCC-RLT-RTW/ECCC-RetourauLieudeTravail-ReturntotheWorkplace/blob/main/Documentation/RTW%20DoJ%20Version%202%20Features.docx) for more details
 
 1.	The selectLocationReason Screen has a region filter that allows filtering of the Building dropdown. region values are hardcoded in this dropdown
 2. Disabled EmailQueue functionality
